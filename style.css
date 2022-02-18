@@ -1,0 +1,128 @@
+body {
+    font-family: Arial;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+    height: 75px;
+    width: 100%;
+}
+
+.nav-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 75px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.login {
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:center;
+    justify-items: center;
+    justify-self: center;
+    margin-top: 100px;
+    padding: 10px;
+    padding-top: 35px;
+    border-radius: 5px;
+}
+
+input {
+    border-radius: 3px;
+    display: block;
+    margin: 10px;
+    width: 200px;
+    height: 25px;
+    font-size: 13.5px;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#login {
+    color: white;
+    text-align: center;
+}
+
+.login-btn {
+    background-color: #297bbe;
+    border: none;
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+    padding: 5px;
+    height: 25px;
+    font-size: 13.5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    border: 1px solid #fff0;
+}
+
+.login-btn:hover {
+    background-color: #226296;
+    border: 1px solid #ffff;
+}
+
+.username {
+    line-height: 75px;
+    margin: 0px;
+    color: white;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.quiz {
+    box-shadow: 3px 5px 3px #0e0d0d8c;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.question {
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-lbl {
+    line-height: 46px;
+}
+
+.radio-btn {
+margin-left: 0px;
+margin-right: 10px;
+width: 20px;
+}
+
+#msg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

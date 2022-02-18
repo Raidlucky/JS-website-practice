@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Website</title>
+    <script src="../main.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-center">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="quiz.html">Quiz</a>
+            <a class="nav-link" href="">Support</a>
+            <a class="nav-link" href="login.html">Login</a>
+        </div>
+        <p class="username" id="nav-name"> </p>
+    </nav>
+    <!--Quiz Div-->
+    <div class="quiz" id="quiz">
+        <div class="quiz-title">
+            <h1 class="question">Whats the capital of Illinois</h1>
+            <p class="quest_count" id="counter"></p>
+        </div>
+        <div class="questions">
+            <input class="radio-btn" type="radio" id="ans1" name="Illinois" value="SpringField">
+            <label class="radio-lbl" for="ans1">SpringField</label><br>
+        </div>
+        <div class="questions">
+            <input class="radio-btn" type="radio" id="ans2" name="Illinois" value="Chicago">
+            <label class="radio-lbl" for="ans2">Chicago</label><br>
+        </div>
+    </div>
+    <!--Question 2-->
+    <div class="quiz" id="quiz">
+        <div class="quiz-title">
+            <h1 class="question">What Continent is Greece on</h1>
+            <p class="quest_count" id="counter"></p>
+        </div>
+        <div class="questions">
+            <input class="radio-btn" type="radio" id="ans3" name="Question-2" value="North America">
+            <label class="radio-lbl" for="ans1">North America</label><br>
+        </div>
+        <div class="questions">
+            <input class="radio-btn" type="radio" id="ans4" name="Question-2" value="Europe">
+            <label class="radio-lbl" for="ans2">Europe</label><br>
+        </div>
+        <div class="questions">
+            <input class="radio-btn" type="radio" id="ans5" name="Question-2" value="Europe">
+            <label class="radio-lbl" for="ans2">Asia</label><br>
+        </div>
+        <div class="questions">
+            <input class="radio-btn" type="radio" id="ans6" name="Question-2" value="Europe">
+            <label class="radio-lbl" for="ans2">South America</label><br>
+        </div>
+        <button id="submit-btn" onclick="submit()">Submit</button>
+    </div>
+    <p id="msg"></p>
+</body>
+</html>
