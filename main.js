@@ -3,8 +3,8 @@ var logged_in = false
 function login() {
     const input_val1 = document.getElementById('username').value;
     const input_val2 = document.getElementById('password').value;
-    const usernames = ["Lucky", "Jack", "Alex"];
-    const passwords = ["Password", "login", "NigerianMan"];
+    const usernames = ["Lucky", "Jack", "Alex", "Michael"];
+    const passwords = ["Password", "login", "NigerianMan", "words"];
     console.log("logged in: ", logged_in);
 for (const x of usernames) {
     if (input_val1 == x) {
