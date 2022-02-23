@@ -1,8 +1,6 @@
 var logged_in = false
 
 function login() {
-    let false_usernames = 0
-    let false_passwords = 0
     const typed_username = document.getElementById('username').value;
     const typed_password = document.getElementById('password').value;
     const usernames = ["Lucky", "Jack", "Alex"];
@@ -21,9 +19,16 @@ for (const x of usernames) {
                     } else {
                         document.getElementById("login").innerHTML = "Your password/username is incorrect";
                     }
+                } else {
+                    document.getElementById("login").innerHTML = "Your password/username is incorrect";
                 }
             }
+        } else {
+            document.getElementById("login").innerHTML = "Your password/username is incorrect";
         }
+    }
+    if (logged_in == true) {
+        document.getElementById("login").innerHTML = "Logged in";
     }
 }
 
