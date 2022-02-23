@@ -21,16 +21,9 @@ for (const x of usernames) {
                     } else {
                         document.getElementById("login").innerHTML = "Your password/username is incorrect";
                     }
-                } else {
-                    false_usernames+=1
                 }
             }
-        } else {
-            false_passwords+=1
         }
-    }
-    if (false_usernames > usernames.length || false_passwords > passwords.length) {
-        document.getElementById("login").innerHTML = "Your password/username is incorrect";
     }
 }
 
