@@ -1,27 +1,36 @@
 var logged_in = false
 
 function login() {
-    const input_val1 = document.getElementById('username').value;
-    const input_val2 = document.getElementById('password').value;
+    let false_usernames = 0
+    let false_passwords = 0
+    const typed_username = document.getElementById('username').value;
+    const typed_password = document.getElementById('password').value;
     const usernames = ["Lucky", "Jack", "Alex"];
     const passwords = ["Password", "login", "NigerianMan"];
     console.log("logged in: ", logged_in);
 for (const x of usernames) {
-    if (input_val1 == x) {
+    if (typed_username == x) {
     console.log("username: ", x);
     for (const y of passwords) {
-        if (input_val2 == y) {
+        if (typed_password == y) {
         console.log("password: ", y);
             if (usernames.indexOf(x) == passwords.indexOf(y)) {
-        document.getElementById("login").innerHTML = "Logged in";
-        logged_in = true;
-        document.getElementById("nav-name").innerHTML = x;
+                document.getElementById("login").innerHTML = "Logged in";
+                logged_in = true;
+                document.getElementById("nav-name").innerHTML = x;
                     } else {
                         document.getElementById("login").innerHTML = "Your password/username is incorrect";
                     }
+                } else {
+                    false_usernames+=1
                 }
             }
+        } else {
+            false_passwords+=1
         }
+    }
+    if (false_usernames > usernames.length || false_passwords > passwords.length) {
+        document.getElementById("login").innerHTML = "Your password/username is incorrect";
     }
 }
 
@@ -33,7 +42,21 @@ function submit() {
     console.log("Question 2:", ans4.checked);
     if (ans1.checked == true && ans4.checked == true) {
         document.getElementById("msg").innerHTML = "Congrats that is correct";
+        document.getElementById("msg").style.color = "green"
     } else {
         document.getElementById("msg").innerHTML = "Sorry that is incorrect";
+        document.getElementById("msg").style.color = "red"
     }
+}
+
+numbers = "";
+
+function add_num(num) {
+numbers = numbers.concat(num);
+document.getElementById("calc").innerHTML = numbers;
+}
+
+function num_submit() {
+    document.getElementById("calc").innerHTML = `${numbers} = ${eval(numbers)}`;
+    numbers = "";
 }

@@ -125,4 +125,44 @@ width: 20px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    font-weight: 600;
+}
+
+.calculator {
+    background-color: #a7a7a7;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.calc-dis {
+    background-color: #ffff;
+    color: #333;
+    height: 25px;
+    line-height: 25px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.calc-btn {
+height: 25px;
+width: 93px;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+}
+
+.side-btns {
+display: flex;
+flex-direction: column;
 }
