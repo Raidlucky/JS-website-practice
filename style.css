@@ -14,9 +14,7 @@ nav {
 
 .nav-center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
+    margin-inline: auto;
 }
 
 a {
@@ -24,8 +22,7 @@ a {
     font-size: 18px;
     text-decoration: none;
     line-height: 75px;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-inline: 5px;
 }
 
 .login {

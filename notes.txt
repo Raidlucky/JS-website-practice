@@ -1,0 +1,3 @@
+JS Notes
+append to list .push
+ASCII convert string .charcodeat

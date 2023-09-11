@@ -47,8 +47,10 @@ function submit() {
     }
 }
 
-numbers = "";
+//my solution was to make an empty string and add a number and operator to that string each time it is pressed on the calc
+//Then it is put into a template literal to show the expression and its solution
 
+let numbers = "";
 function add_num(num) {
 numbers = numbers.concat(num);
 document.getElementById("calc").innerHTML = numbers;
@@ -57,4 +59,18 @@ document.getElementById("calc").innerHTML = numbers;
 function num_submit() {
     document.getElementById("calc").innerHTML = `${numbers} = ${eval(numbers)}`;
     numbers = "";
+}
+
+function Convert() {
+let option = parseInt(document.getElementById('Conversion').value);
+let input = parseInt(document.getElementById('UserInput').value);
+
+if (option == 0) {
+    let output = (input * 1.609344);
+    console.log(output);
+} else if (option == 1) {
+    let output = (input * 2.54);
+    console.log(output);
+}
+
 }
